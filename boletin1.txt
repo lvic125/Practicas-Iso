@@ -25,4 +25,20 @@ ALT find ../../bin/ ../../sbin/ -name "????"
 10. No, porque hay elementos en el directorio 
 	rm -fr /home/alumno/copia_etc/
 
-11. 
+11. find . -name ".*"
+
+12. find /usr/ -name "[[:upper:]]*[0-9]"
+
+13. find /usr -name "*[!0-9]"
+
+14. find /etc/ /usr/bin/ /usr/sbin/ -type f -mtime +7
+
+15.	find ~alumno/ -newer ~/.bash_profile 
+
+16. mkdir temp 
+	find /etc -type f -size +5k -size -30k -name "g*" -exec cp {} ~alumno/temp/ \; -printf "Copiado %f de %s bytes\n" 2>/dev/null 
+	
+17. find ~alumno/ -type f -perm /g=rwx,o=rwx -exec chmod 600{} \;
+
+18.	find /usr/bin/ /usr/sbin/ -type f -user root ! -perm -u=w -printf "Fichero: %p, permisos: %M\n"
+
