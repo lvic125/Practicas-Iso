@@ -1,0 +1,28 @@
+Boletín 1. 
+
+1. 	pwd
+
+2. 	cd /etc
+	pwd
+	
+3.	ls -l -d a*
+
+4. 	cd
+	ls ../../bin/???? ../../sbin/???? 
+ALT find ../../bin/ ../../sbin/ -name "????"
+
+5. 	mkdir configuracion
+	cp -a /etc/ /home/alumno/configuracion/
+
+6. 	find -type d
+
+7. 	find /home/alumno/configuracion/etc/ -type f -size -100k -exec rm -fr {} \; 
+
+8.	find . -maxdepth 1 -type f -printf "Nombre %p, tamaño: %s bytes\n"
+
+9.	mv configuracion/ /home/alumno/copia_etc
+	
+10. No, porque hay elementos en el directorio 
+	rm -fr /home/alumno/copia_etc/
+
+11. 
