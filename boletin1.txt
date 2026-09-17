@@ -40,5 +40,5 @@ ALT find ../../bin/ ../../sbin/ -name "????"
 	
 17. find ~alumno/ -type f -perm /g=rwx,o=rwx -exec chmod 600{} \;
 
-18.	find /usr/bin/ /usr/sbin/ -type f -user root ! -perm -u=w -printf "Fichero: %p, permisos: %M\n"
+18.	find /usr/bin/ /usr/sbin/ -type f -user root ! -perm /200 -printf "Fichero: %p, permisos: %M\n"
 
