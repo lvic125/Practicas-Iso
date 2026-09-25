@@ -1,0 +1,18 @@
+Nº ocurrencia  	|	Char		| Bash (comodines) 	| 	regex(grep) | 
+====================================================================|
+1 				|	cualquiera	|		? 			|		. 		|
+0 o +			|	cualquiera 	|		* 			|		.* 		|
+0 o + 			|		x 		|	no se puede 	|		x* 		|
+1 o + 			|	cualquiera 	|		?* 			|		.\+ 	|
+1 o + 			| 		x 		| 		x 			| 		x\+		|
+1 				| 	 a, b, c  	| 	  [abc]			| 	   [abc]	|
+1 				| 	NO a,b,c	| 	 [!abc]			| 	  [^abc] 	|
+0 o 1 			|  cualquiera/x | 	no se puede		|		x? 		|
+====================================================================|
+
+
+
+
+
+
+
