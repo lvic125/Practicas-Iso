@@ -1,0 +1,10 @@
+1. ps aux | grep -w "alumno" 
+2. ps aux | grep -c "alumno"
+3. ps aux | grep -vc "alumno"
+4. find /etc -type f -exec grep -li "alumno" {} \; 2>/dev/null 
+5. cat /etc/passwd | grep "^alumno"
+6. ps aux | tail -n +2 | grep -o "[a-zA-Z]*"
+7.  ps aux | tail -n +2 | grep -Eo '[a-zA-Z]{4}' | sort
+8.  ps aux | tail -n +2 | grep -Eo '[a-zA-Z]{4}' | sort | column
+
+
