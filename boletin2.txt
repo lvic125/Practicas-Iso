@@ -1,10 +1,20 @@
-1. ps aux | grep -w "alumno" 
-2. ps aux | grep -c "alumno"
-3. ps aux | grep -vc "alumno"
-4. find /etc -type f -exec grep -li "alumno" {} \; 2>/dev/null 
-5. cat /etc/passwd | grep "^alumno"
-6. ps aux | tail -n +2 | grep -o "[a-zA-Z]*"
-7.  ps aux | tail -n +2 | grep -Eo '[a-zA-Z]{4}' | sort
-8.  ps aux | tail -n +2 | grep -Eo '[a-zA-Z]{4}' | sort | column
+1.	ps aux | grep -w "alumno" 
+2.	ps aux | grep -c "alumno"
+3.	ps aux | grep -vc "alumno"
+4.	find /etc -type f -exec grep -li "alumno" {} \; 2>/dev/null 
+5.	cat /etc/passwd | grep "^alumno"
+6.	ps aux | tail -n +2 | grep -o "[a-zA-Z]*"
+7.	ps aux | tail -n +2 | grep -Eo '[a-zA-Z]{4}' | sort
+8. 	ps aux | tail -n +2 | grep -Eo '[a-zA-Z]{4}' | sort | column
+9. 	ps aux | grep -o "[0-9]*"
+10. 	ps aux | grep -o "[0-9]*" | sort -n
+11.	ps aux | tr -s ' ' |tail -n +2 | cut -f6 -d ' ' | sort -n
+12. 	ps aux | tr -s ' ' | cut -d ' ' -f6 
+13. 	find /etc -type f -printf "%f:%s\n" 2>/dev/null | sort -k2,2n
+14. 	ps aux | tr -s ' ' | cut -d ' ' -f1 | sort | uniq
+15.	ps aux | tr -s ' ' | cut -d ' ' -f1 | tail -n+2 | sort | uniq
+16. 	ps aux | tr -s ' ' | cut -d ' ' -f1 | tail -n+2 | sort | uniq | tr 		'[:lower:]' '[:upper:]'
+17. 	 ps aux | tr -s ' ' | cut -d ' ' -f1 | tail -n+2 | sort | uniq | tr 		'[:lower:]' '[:upper:]' | uniq -c | tr -s ' ' | cut -d ' ' -f2 | paste -s 
+	-d '+' | bc
 
 
